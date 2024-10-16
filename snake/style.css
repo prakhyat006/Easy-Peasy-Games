@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Merriweather";
+    background-color: #548687;
+} 
+.body{
+    background-color: #548687;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh;
+    background-size: 100vw 100vh; */
+}
+
+#board{
+    position: absolute;
+    top: 20px;
+    background: linear-gradient(rgb(144, 255, 144),rgb(255, 255, 111));
+    width: 90vmin;
+    height: 92vmin;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background:linear-gradient(red,yellow);
+    transform: scale(1.02);
+    border: 2px solid purple;
+    border-radius: 9px ;
+
+}
+.snake{
+    background-color:purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background: linear-gradient(red,purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 150px;
+    font-size: 39px;
+    font-weight: bold;
+}
+#Highscore{
+    position: absolute;
+    top: 55px;
+    right: 150px;
+    font-size: 39px;
+    font-weight: bold;
+}
